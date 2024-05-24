@@ -1,9 +1,9 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import locations from "../assets/locations.json";
+
 const positions = locations.map((loc) => [loc.LAT_Y_4326, loc.LONG_X_4326]);
 
 const Map = ({ height }) => {
-  console.log(locations);
   return (
     <MapContainer
       center={positions[0]}
